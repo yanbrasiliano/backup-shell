@@ -59,8 +59,8 @@ sleep 2
 echo "Wait for the backup to finish..."
 sleep 2
 echo "Total size $HOME --> $SIZE"
-BKP="backup_home_$HOME_$(date +%Y%m%d%H%M0.tgz)"
-tar zcvpf $DIR/$BKP --absolute-names --exclude="$DIR" "$HOME"/* > /dev/null
+BKP="backup_home_$HOME_$(date +%Y%m%d%H%M0.gzip)"
+tar czvf $DIR/$BKP --absolute-names --exclude="$DIR" "$HOME"/* > /dev/null
 echo
 echo "Backup created. /// Name:$BKP /// Diretory: $DIR"
 echo
