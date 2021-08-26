@@ -1,4 +1,4 @@
-#!/bin/bash
+#!usr/bin/env bash
 #
 #	backup.sh:			Script for creating backup of the user's /home. 	
 #	Autor:					Yan B.S.Penalva <yanpenabr@gmail.com>
